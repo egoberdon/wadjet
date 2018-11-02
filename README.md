@@ -3,9 +3,12 @@
 
 a python library for working with nasa open apis
 
+
 Currently wadjet only has one mode but I would love to add many.
 
+
 (Please send PRs with cool ones.)
+
 
 This mode finds the objects nearby in orbit, gets the first 12,
 selects one at random and introduces you to that space object.
@@ -13,9 +16,11 @@ selects one at random and introduces you to that space object.
 To get going 👇🏽
 
 `pip install -r requirements.txt`
+
 `python wadjet.py`
 
 example output:
+
 ```
 There are 19668 total near earth objects at this time
 Lets check out 12 of them
@@ -39,4 +44,5 @@ Digging further let's look @ a random one
 
 ```
 Runs on python 3.6
+
 Uses NASA's open API - NEO
