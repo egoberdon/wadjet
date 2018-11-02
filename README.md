@@ -1,6 +1,5 @@
-![wadjet logo, pink digital text on blue statue eye][wadjet.JPG]
+![wadjet logo, pink digital text on blue statue eye](wadjet.JPG)
 
-##wadjet##
 
 a python library for working with nasa open apis
 
