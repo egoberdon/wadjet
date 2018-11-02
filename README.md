@@ -1,19 +1,15 @@
 ![wadjet logo, pink digital text on blue statue eye](wadjet.JPG)
 
 
-a python library for working with nasa open apis
+## a python library for working with nasa open apis
 
 
-Currently wadjet only has one mode but I would love to add many.
-
-
-(Please send PRs with cool ones.)
-
-
-This mode finds the objects nearby in orbit, gets the first 12,
++ Currently wadjet only has one mode but I would love to add many.
++ (Please send PRs with cool ones.)
++ This mode finds the objects nearby in orbit, gets the first 12,
 selects one at random and introduces you to that space object.
 
-To get going 👇🏽
+## To get going 👇🏽
 
 `pip install -r requirements.txt`
 
