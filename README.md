@@ -13,7 +13,7 @@
 + NEO (near earth object) - neo.py instantiates a NEO class
 + run_neo - This mode finds objects nearby in orbit, selects one at random and introduces you to that space object.
 
-+ example `python wadjet.py --mode=neo()` output:
++ example `python wadjet.py --mode=neo` output:
 
 ```
 There are 19668 total near earth objects at this time
