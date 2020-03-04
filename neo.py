@@ -1,7 +1,7 @@
 """Classes and functions that interact w/ Nasa's Near Earth Object API"""
 from faker import Faker
 
-from system import System
+from .system import System
 
 NEO_API = "https://api.nasa.gov/neo/rest/v1/neo/browse"
 
@@ -53,3 +53,6 @@ class NEO:
 		first = self.fake.last_name()
 		second = self.fake.city()
 		return f'{first} {second} {len(second) - len(first)}'
+
+	def list(self):
+		return self.__str__().splitlines()

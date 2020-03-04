@@ -5,9 +5,9 @@ import click
 
 from random import choice
 
-from credentials import API_KEY
-from neo import NEO, NEO_API
-from image import IMAGE_API, Image
+from .credentials import API_KEY
+from .neo import NEO, NEO_API
+from .image import IMAGE_API, Image
 
 KEY = {'api_key': API_KEY}
 NUM = 12
@@ -21,6 +21,14 @@ def phone_home(url, params):
 
 
 def run_neo():
+
+	neo_response = phone_home(NEO_API, KEY)
+	neo_data = choice(neo_response['near_earth_objects'])
+	neo = NEO(**neo_data)
+	return neo
+
+
+def print_neo():
 	neo_response = phone_home(NEO_API, KEY)
 	total_amount = neo_response['page']['total_elements']
 	print(f'There are {total_amount} total near earth objects at this time')
@@ -44,7 +52,7 @@ def run_image(keyword):
 @click.option('--keyword', default='moon')
 def cli(mode, keyword):
 	if mode == 'neo':
-		run_neo()
+		print_neo()
 
 	elif mode == 'image':
 		run_image(keyword)
